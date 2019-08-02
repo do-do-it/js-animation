@@ -1,0 +1,12 @@
+@rem: 200rem;
+
+.wd(@w, @h) {
+  width: @w / @rem;
+  height: @h / @rem;
+}
+
+.rem(@p, @n) {
+  @{p}: @n / @rem;
+}
+
+@import './global.less';

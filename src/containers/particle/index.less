@@ -1,0 +1,43 @@
+@import '../../components/styles/minix.less';
+
+body {
+  background-color: #000;
+  color: #fff;
+  font-size: 16px;
+  position: relative;
+}
+
+#root {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.cls1 {
+  position: absolute;
+  .wd(10, 10);
+  background-color: green;
+}
+
+.cls2 {
+  position: absolute;
+  .wd(10, 10);
+  background-color: red;
+}
+
+.cls3 {
+  position: absolute;
+  .wd(10, 10);
+  background-color: yellow;
+}
+
+.btn {
+  position: fixed;
+  left: 50%;
+  bottom: 30 / @rem;
+  transform: translate(-50%);
+  .wd(200,50);
+  line-height: 50 / @rem;
+  text-align: center;
+  background-color: green;
+}
